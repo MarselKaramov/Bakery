@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Bakery</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="wrapper">
+            <img src="./images/terlaLogo.png" alt="Tetra" class="logo">
+            <ul class="headerMenu">
+                <li class="headerMenuTxt menuString1">SHOP</li>
+                <li class="headerMenuTxt menuString2">OUR STORY</li>
+                <li class="headerMenuTxt menuString3">WHO IS TARLA?</li>
+            </ul>
+        </nav>
+
+        <div class="headerButtons">
+            <div class="loginIcon"></div>
+            <div class="cardIcon"></div>
+            <p class="loginIconText headerBtnTxt">Log in</p>
+            <p class="cardIconText headerBtnTxt">Cart</p>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="intro">
+            <div class="introTextsContainer  wow animate__animated animate__fadeInLeft animate__fast">
+                <h1 class="introText">Fresh <br> pastry kits</h1>
+                <h1 class="introSubtitle">Bringing the smells and tastes of your favourite
+                    <br> patisserie to your home. Our kits have everything you
+                    <br> need to easily make killer pastries every time. We’ve
+                    <br> done the tricky bits so all you need to do is roll, proof
+                    <br> and bake!
+                </h1>
+                <button data-link='shop_kits' type='button' class="shopBtn kits_Btn ">
+                    <h1 class="shopBtnTxt ">Shop pastry kits</h1>
+                </button>
+
+
+            </div>
+            <div class="slider middle ">
+
+                <div class="slides  wow animate__animated animate__fadeInRight animate__fast">
+                    <input type="radio" placeholder='none' name="r" id="r1" checked>
+                    <input type="radio" placeholder='none' name="r" id="r2">
+                    <input type="radio" placeholder='none' name="r" id="r3">
+                    <input type="radio" placeholder='none' name="r" id="r4">
+
+                    <div class="slide s1"><img src="./images/introImage.png" alt="intoImage" class="intoImage"></div>
+                    <div class="slide"><img src="./images/intoImage.jpg" alt="intoImage" class="intoImage"></div>
+                    <div class="slide"><img src="./images/intoImage2.jpg" alt="intoImage" class="intoImage"></div>
+                    <div class="slide"><img src="./images/intoImage3.jpg" alt="intoImage" class="intoImage"></div>
+                </div>
+
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="infoCards ">
+
+            <h1 class="infoCardsTitle wow animate__animated animate__fadeIn animate__fast">How it works</h1>
+
+            <div class="infoCardsCont wow animate__animated animate__fadeInRightBig animate__fast">
+
+                <div class="icons img1"><img src="./images/infoCardImg1.png" alt="infoCardImg1" class="infoCardsImg"></div>
+                <div class="icons img2"><img src="./images/infoCardImg2.png" alt="infoCardImg2" class="infoCardsImg"></div>
+                <div class="icons img3"><img src="./images/infoCardImg3.png" alt="infoCardImg3" class="infoCardsImg"></div>
+                <div class="icons img4"><img src="./images/infoCardImg4.png" alt="infoCardImg4" class="infoCardsImg"></div>
+
+                <h2 class="infoCardsSubTitle title1">CHOOSE YOUR<br> FAVE</h2>
+                <h2 class="infoCardsSubTitle title2">DING <br> DONG</h2>
+                <h2 class="infoCardsSubTitle title3">GET <br> BAKED</h2>
+                <h2 class="infoCardsSubTitle title4">TAKE THE <br> CREDIT</h2>
+
+                <h3 class="infoCardsText text1">
+                    This sounds easier than it's going to be.
+                    <br> We've got all the classics on here, so
+                    <br> now it's over to you.
+                </h3>
+                <h3 class="infoCardsText text2">
+                    Next you'll get a beautiful little package
+                    <br> delivered to your door, on a day and
+                    <br> time slot that you choose.
+                </h3>
+                <h3 class="infoCardsText text3">
+                    Take your fresh pastry sheet and
+                    <br> fillings, learn our pro techniques then
+                    <br> never buy a stale pastry ever again.</h3>
+                <h3 class="infoCardsText text4">
+                    It was all you, nudge-nudge wink-wink.
+                    <br> We're just happy to be your loyal side-
+                    <br>kick.
+                </h3>
+
+            </div>
+
+            <button data-link='shop_kits' type="button" class="cardsBtn kits_Btn wow animate__animated animate__fadeInRight animate__fast">
+                <h1 class="shopBtnTxt">Shop pastry kits</h1>
+            </button>
+
+        </section>
+
+        <section class="freshlyBaked">
+
+            <div class="freshlyBackedCont">
+
+                <div class="freshlyBakedPictureCont wow animate__animated animate__fadeInLeft animate__fast"><img src="./images/freshlyBakedPicture.png" alt="" class="freshlyBakedPicture"></div>
+
+                <h2 class="freshlyBakedText wow animate__animated animate__fadeInRight animate__fast">Freshly baked means fresh bakery
+                    <br>smells filling your home, warm
+                    <br>oozey pastries on your plates, and
+                    <br>never needing to get out of your PJs.</h2>
+
+                <button data-link='shop_kits' type="button" class="freshlyBakedBtn kits_Btn">
+                    <h1 class="shopBtnTxt">Shop pastry kits</h1>
+                </button>
+
+            </div>
+
+        </section>
+
+        <section id="shop_kits" class="shopKits">
+            <h2 class="shopKitsTitle wow animate__animated animate__fadeIn animate__fast">Shop pastry kits</h2>
+            <div class="shopKitsCont ">
+
+                <figure class="shopKitsCard1 wow animate__animated animate__fadeInRight animate__fast">
+
+                    <img src="./images/kitImg1.png" alt="" class="shopKitsImg">
+                    <figcaption class="shopKitsCardText">All-Butter <br>Croissant</figcaption>
+                    <h4 class="shopKitsCardPrise">Kit of 6 - £12</h4>
+
+                    <button type="submit" class="shopKitsCardBtn">
+                            <h1 class="shopKitsBtn">Add to cart</h1>
+                    </button>
+                </figure>
+
+                <figure class="shopKitsCard2 wow animate__animated animate__fadeInRight animate__fast">
+
+                    <img src="./images/kitImg2.png" alt="" class="shopKitsImg">
+                    <figcaption class="shopKitsCardText">Almond <br>Croissant</figcaption>
+                    <h4 class="shopKitsCardPrise">Kit of 6 - £13.50</h4>
+
+                    <button type="submit" class="shopKitsCardBtn">
+                            <h1 class="shopKitsBtn">Add to cart</h1>
+                    </button>
+                </figure>
+
+                <figure class="shopKitsCard3 wow animate__animated animate__fadeInRight animate__fast">
+
+                    <img src="./images/kitImg3.png" alt="" class="shopKitsImg">
+                    <figcaption class="shopKitsCardText">Raspberry <br>Danish</figcaption>
+                    <h4 class="shopKitsCardPrise">Kit of 6 - £13.50</h4>
+
+                    <button type="submit" class="shopKitsCardBtn">
+                            <h1 class="shopKitsBtn">Add to cart</h1>
+                    </button>
+                </figure>
+
+                <figure class="shopKitsCard4 wow animate__animated animate__fadeInLeft animate__fast">
+
+                    <img src="./images/kitImg4.png" alt="" class="shopKitsImg">
+                    <figcaption class="shopKitsCardText">Pain Aux <br>Raisins</figcaption>
+                    <h4 class="shopKitsCardPrise">Kit of 6 - £13.50</h4>
+
+                    <button type="submit" class="shopKitsCardBtn">
+                            <h1 class="shopKitsBtn">Add to cart</h1>
+                    </button>
+                </figure>
+
+                <figure class="shopKitsCard5 wow animate__animated animate__fadeInLeft animate__fast">
+
+                    <img src="./images/kitImg5.png" alt="" class="shopKitsImg">
+                    <figcaption class="shopKitsCardText">Apricot <br>Danish</figcaption>
+                    <h4 class="shopKitsCardPrise">Kit of 6 - £13.50</h4>
+
+                    <button type="submit" class="shopKitsCardBtn">
+                            <h1 class="shopKitsBtn">Add to cart</h1>
+                    </button>
+                </figure>
+
+                <figure class="shopKitsCard6 wow animate__animated animate__fadeInLeft animate__fast">
+
+                    <img src="./images/kitImg6.png" alt="" class="shopKitsImg">
+                    <figcaption class="shopKitsCardText">Pain Au <br>Chocolat</figcaption>
+                    <h4 class="shopKitsCardPrise">Kit of 6 - £13.50</h4>
+
+                    <button type="submit" class="shopKitsCardBtn">
+                            <h1 class="shopKitsBtn">Add to cart</h1>
+                    </button>
+                </figure>
+            </div>
+        </section>
+
+        <section class="bigImgSection wow animate__animated animate__fadeIn animate__fast">
+            <img src="./images/bigimg.png" alt="" class="bigImg">
+        </section>
+
+        <section class="threeCards">
+            <div class="threeCardsCont wow animate__animated animate__fadeInLeft animate__fast">
+
+                <div class="CardOfThree">
+                    <div class="firstCardContainer">
+                        <img src="./images/firstCardOfThreeImg.png" alt="" class="CardOfThreeImg">
+                        <h1 class="threeCardsTitle">Better than <br> the bakery</h1>
+                        <h4 class="threeCardsText">You’ll soon be making pastries to rival the best
+                            <br> bakeries in town. We use only the best
+                            <br> ingredients for generous pastries that taste and
+                            <br> smell amazing. So good, that you’ll take all the
+                            <br> credit.</h4>
+                    </div>
+                </div>
+
+
+                <div class="CardOfThree">
+                    <div class="firstCardContainer">
+                        <img src="./images/secondCardOfThreeImg.png" alt="" class="CardOfThreeImg">
+                        <h1 class="threeCardsTitle">Planet-friendly <br> packaging</h1>
+                        <h4 class="threeCardsText">We’ve done everything we can to make sure our
+                            <br> packaging has the lightest footprint on the
+                            <br> planet as possible. We’ve made sure everything
+                            <br> is recyclable, and use as little packaging as we
+                            <br> can.</h4>
+                    </div>
+                </div>
+
+
+                <div class="CardOfThree">
+                    <div class="firstCardContainer">
+                        <img src="./images/thirdCardOfThreeImg.png" alt="" class="CardOfThreeImg">
+                        <h1 class="threeCardsTitle">Simple to bake <br> at home</h1>
+                        <h4 class="threeCardsText">We’ve done the hard work, so you don’t have to.
+                            <br> Every pastry is easy to make with our 3-step
+                            <br> instructions and doesn’t require any special
+                            <br> tools – just an oven!</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="infoOfProducts">
+
+            <div class="proctionInfo1 wow animate__animated animate__fadeIn animate__fast">
+                <img src="./images/proctionInfoImg1.png" alt="" class="proctionInfoImg wow animate__animated animate__fadeInLeft animate__fast">
+                <div class="proctionInfoCont wow animate__animated animate__fadeInRight animate__fast">
+                    <p class="proctionInfoTitle">Amazing Ingredients</p>
+                    <h1 class="proctionInfoText1">We like to keep things simple and authentic.
+                        <br> We’ve sourced the very best from the very
+                        <br> best, from our Poitou-Charentes butter to
+                        <br> our Valrhona chocolate batons.</h1>
+                    <button type="submit" class="proctionInfoBtn">
+                        <h1 class="shopKitsBtn">Read more</h1>
+                    </button>
+                </div>
+            </div>
+
+            <div class="proctionInfo2 wow animate__animated animate__fadeIn animate__fast">
+
+                <img src="./images/proctionInfoImg2.png" alt="" class="proctionInfoImg wow animate__animated animate__fadeInRight animate__fast">
+
+                <div class="proctionInfoCont wow animate__animated animate__fadeInLeft animate__fast">
+                    <p class="proctionInfoTitle">Legendary Bakes</p>
+                    <h1 class="proctionInfoText2">The inspiration for our brand and our
+                        <br> guiding principles is the Legend of El
+                        <br> Tarlà. A young man who brought joy
+                        <br> to the isolated citizens of Girona
+                        <br> during an outbreak of the plague.</h1>
+                    <button type="submit" class="proctionInfoBtn">
+                        <h1 class="shopKitsBtn">Read more</h1>
+                </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="instSection">
+            <p class='instSectionTitle wow animate__animated animate__fadeIn animate__fast'>@tarlabakes</p>
+            <div class="wow animate__animated animate__fadeInRight animate__fast">
+                <div id="instSlider">
+                    <img src="./images/instImage1.png" alt="" class="slide-single">
+                    <img src="./images/instImage2.png" alt="" class="slide-single">
+                    <img src="./images/instImage3.png" alt="" class="slide-single">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <section class="formEmail wow animate__animated animate__fadeIn animate__fast">
+            <h1 class="formEmailTitle">Join our community</h1>
+            <h2 class="formEmailSubtitle">and let's get baked</h2>
+            <fieldset class="formEmailCont">
+                <input type="text" name="userLikeToDo" class="inputText" placeholder="Ваш email">
+            </fieldset>
+        </section>
+
+        <section class="footerInfo wow animate__animated animate__fadeIn animate__faster">
+            <div class="logo footerLogo"><img src="./images/terlaLogo.png" alt="Tetra" class="logo"></div>
+
+
+            <h1 class="TitlesText1 titles_Text"> Account</h1>
+            <h1 class="TitlesText2 titles_Text">Our company</h1>
+            <h1 class="TitlesText3 titles_Text">Resources</h1>
+            <h1 class="TitlesText4 titles_Text">@tarlabakes</h1>
+
+
+
+
+            <div class="subTitleTextsCont subTitleTextsCont1">
+                <a href="#!" class="subTitleTexts">Sign Up</a>
+                <a href="#!" class="subTitleTexts">Log In</a>
+            </div>
+            <div class="subTitleTextsCont subTitleTextsCont2">
+                <a href="#!" class="subTitleTexts">Shop</a>
+                <a href="#!" class="subTitleTexts">Our Story</a>
+                <a href="#!" class="subTitleTexts">Who is Tarla?</a>
+            </div>
+            <div class="subTitleTextsCont subTitleTextsCont3">
+                <a href="#!" class="subTitleTexts">FAQ</a>
+                <a href="#!" class="subTitleTexts">Contact</a>
+                <a href="#!" class="subTitleTexts">Become an Influencer</a>
+                <a href="#!" class="subTitleTexts">Privacy Policy</a>
+                <a href="#!" class="subTitleTexts">Terms of Service</a>
+                <a href="#!" class="subTitleTexts">Refund Policy</a>
+            </div>
+            <div class="subTitleLogos">
+                <img src="./images/twitterImg.png" alt="Tetra" class="subTitleLogo">
+                <img src="./images/facebookImg.png" alt="Tetra" class="subTitleLogo">
+                <img src="./images/IntsImg.png" alt="Tetra" class="subTitleLogo">
+                <img src="./images/TikTokImg.png" alt="Tetra" class="subTitleLogo">
+                <img src="./images/musikImg.png" alt="Tetra" class="subTitleLogo">
+            </div>
+
+            <p id="year">©2021 Tarla</p>
+        </section>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap');
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: #F5EDE7;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 88px;
+    background: #F5EDE7;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    transition: .2s linear;
+    z-index: 999;
+}
+
+.headerActive {
+    position: fixed;
+    width: 100%;
+    height: 88px;
+    background: #f5ede7d2;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-left: 24px;
+    padding-right: 16px;
+}
+
+.headerMenuTxt {
+    padding-bottom: 21px;
+}
+
+.headerMenu {
+    height: 100%;
+    list-style-type: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.headerMenuTxt:hover {
+    color: #808080
+}
+
+.menuString2 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.headerButtons {
+    display: grid;
+    justify-content: end;
+    justify-items: center;
+    align-content: center;
+    padding-right: 30px;
+    grid-column-gap: 13px;
+    grid-template-areas: "loginIcon cardIcon" "loginIconText loginIconText";
+}
+
+.headerBtnTxt:hover {
+    color: #808080
+}
+
+.loginIcon {
+    width: 30px;
+    height: 35px;
+    background-image: url(./images/loginIcon.png);
+}
+
+.cardIcon {
+    width: 30px;
+    height: 35px;
+    background-image: url(./images/cardIcon.png);
+}
+
+.headerBtnTxt {
+    margin: 0 auto;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+}
+
+.main {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro {
+    width: 100%;
+    height: 65vh;
+    background: #FFC3A0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.introTextsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.introText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 78px;
+    line-height: 90px;
+}
+
+.introSubtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.shopBtn {
+    height: 58px;
+    width: 310px;
+    border-radius: 35px;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFC3A0;
+    cursor: pointer;
+}
+
+.shopBtn:hover {
+    color: #1f1f1f;
+    background: #e0ad8f;
+}
+
+.shopBtnTxt {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.slider {
+    border-radius: 21px;
+    width: 898px;
+    height: 564px;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    top: 600px;
+}
+
+.bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #1f1f1f;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.bar:hover {
+    opacity: .8;
+    transform: scale(1.1)
+}
+
+.bar:active {
+    opacity: .8;
+    transform: scale(1.1)
+}
+
+#r1 {
+    position: absolute;
+    visibility: hidden;
+}
+
+#r2 {
+    position: absolute;
+    visibility: hidden;
+}
+
+#r3 {
+    position: absolute;
+    visibility: hidden;
+}
+
+#r4 {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    padding-top: 100px;
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -25%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -50%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -75%;
+}
+
+.infoCards {
+    width: 100%;
+    height: 65vh;
+    background: #F5EDE7;
+}
+
+.infoCardsTitle {
+    margin: 0 auto;
+    padding-top: 6vh;
+    font-family: Roboto;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.infoCardsCont {
+    display: grid;
+    grid-template-areas: "img1 img2 img3 img4" "title1 title2 title3 title4" "text1 text2 text3 text4";
+    justify-items: center;
+    grid-row-gap: 12px
+}
+
+.infoCardsSubTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 133%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.infoCardsText {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    margin: 0;
+}
+
+.cardsBtn {
+    margin-left: 43%;
+    margin-top: 43px;
+    height: 58px;
+    width: 310px;
+    border-radius: 35px;
+    border: 1px solid #0126DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5EDE7;
+    cursor: pointer;
+}
+
+.cardsBtn:hover {
+    color: #F5EDE7;
+    background: #002aff;
+}
+
+.freshlyBaked {
+    height: 65vh;
+    width: 100%;
+    background: #F5EDE7;
+}
+
+.freshlyBakedPictureCont {
+    grid-area: freshlyBakedPictureCont;
+}
+
+.freshlyBakedText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+}
+
+.freshlyBakedBtn {
+    grid-area: freshlyBakedBtn;
+    height: 58px;
+    width: 310px;
+    border-radius: 35px;
+    border: 1px solid #0126DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5EDE7;
+    cursor: pointer;
+}
+
+.freshlyBakedBtn:hover {
+    color: #F5EDE7;
+    background: #002aff;
+}
+
+.freshlyBackedCont {
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "freshlyBakedPictureCont freshlyBakedText" "freshlyBakedPictureCont freshlyBakedBtn";
+}
+
+.shopKits {
+    width: 100%;
+    height: 150vh;
+    background: #F5EDE7;
+}
+
+.shopKitsCont {
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "shopKitsCard1 shopKitsCard2 shopKitsCard3" "shopKitsCard4 shopKitsCard5 shopKitsCard6";
+}
+
+.freshlyBakedText {
+    margin-top: 0;
+}
+
+.shopKitsTitle {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.shopKitsCardText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.shopKitsCardPrise {
+    margin: 0 auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.shopKitsCardBtn {
+    height: 58px;
+    width: 257px;
+    border-radius: 35px;
+    border: 1px solid #0126DE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5EDE7;
+    cursor: pointer;
+}
+
+.shopKitsBtn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.shopKitsCardBtn:hover {
+    color: #F5EDE7;
+    background: #002aff;
+}
+
+.bigImgSection {
+    width: 100%;
+    height: 70%;
+    padding-bottom: 25px;
+    background: #F5EDE7;
+}
+
+.bigImg {
+    margin-top: 4%;
+    height: 90%;
+    width: 100%;
+}
+
+.threeCards {
+    width: 100%;
+    height: 70vh;
+    background: #F5EDE7;
+}
+
+.threeCardsCont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.CardOfThree {
+    width: 25%;
+    height: 60vh;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.firstCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardOfThreeImg {
+    margin-top: 25px;
+}
+
+.threeCardsTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 69px;
+    text-align: center;
+    margin: 0;
+}
+
+.threeCardsText {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+}
+
+.infoOfProducts {
+    height: 100vh;
+    width: 98.5%;
+    background: #F5EDE7;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 15px;
+    margin-bottom: 1px solid black;
+}
+
+.proctionInfoTitle {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.proctionInfoText1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.proctionInfoBtn {
+    height: 58px;
+    width: 257px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5EDE7;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 35px;
+}
+
+.proctionInfoBtn:hover {
+    background: #bdbdbd;
+}
+
+.proctionInfoText2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.proctionInfo1 {
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.proctionInfo2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.instSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    background: #E5E5E5;
+    border-top: 1px solid black;
+}
+
+#instSlider {
+    width: 360px;
+    height: 360px;
+    border: 30px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+.instSectionTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.slide-single {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    transition: all ease 1s;
+    left: 0;
+    top: 0;
+}
+
+.footer {
+    width: 100%;
+    background: #F5EDE7;
+}
+
+.formEmail {
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around
+}
+
+.formEmailTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.formEmailSubtitle {
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.inputText {
+    width: 100%;
+    height: 58px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 72px;
+    border: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.formEmailCont {
+    width: 480px;
+    height: 58px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footerInfo {
+    display: grid;
+    grid-template-areas: "logo TitlesText1 TitlesText2 TitlesText3 TitlesText4" "logo subTitleTextsCont1 subTitleTextsCont2 subTitleTextsCont3 subTitleLogos"
+}
+
+.footerLogo {
+    grid-area: logo;
+}
+
+.subTitleTextsCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.titles_Text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.subTitleTexts {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.subTitleTexts:hover {
+    color: #002aff;
+}
+
+#year {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 15px;
+}
